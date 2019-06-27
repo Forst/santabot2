@@ -19,7 +19,7 @@ cogs.__shared.db = db
 
 bot = commands.Bot(command_prefix=COMMAND_PREFIX)
 bot.description = (
-    'This bot allows to conduct a Secret Santa event in Discord servers! '
+    'This bot allows to conduct a Secret Santa event in Discord guilds! '
     'It is specifically optimized for digital presents, such as game codes, gift cards etc, '
     'which the bot can send anonymously via DM.'
 )
@@ -31,18 +31,19 @@ async def on_command_error(ctx: commands.Context, error: commands.CommandError):
     msg = str(error)
 
     if ctx.guild is not None:
-        msg = '<@{}> {}'.format(ctx.message.author.id, msg)
+        msg = '{} {}'.format(ctx.author.mention, msg)
 
     await ctx.send(msg)
 
 
 @bot.command(
+    name='eval',
     help='Evaluates the specified Python expression',
     hidden=True
 )
 @commands.is_owner()
-async def run(ctx, *, arg):
-    result = eval(arg)
+async def _eval(ctx, *, expression: str):
+    result = eval(expression)
 
     if asyncio.iscoroutine(result):
         result = await result
