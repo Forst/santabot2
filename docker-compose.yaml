@@ -1,0 +1,8 @@
+version: "3"
+services:
+  santabot2:
+    build: .
+    image: santabot2
+    volumes:
+      - ./config.py:/usr/src/app/config.py
+      - ./santabot2.db:/usr/src/app/santabot2.db

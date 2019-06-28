@@ -1,0 +1,19 @@
+# All the hidden files
+**/.*
+
+# Local bot configuration
+config.py
+
+# Default SQLite database
+santabot2.db
+
+
+## Python stuff (https://github.com/github/gitignore/blob/master/Python.gitignore)
+
+# Byte-compiled / optimized / DLL files
+**/__pycache__/
+**/*.py[cod]
+**/*$py.class
+
+# Virtual environment
+venv
