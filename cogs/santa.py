@@ -340,7 +340,7 @@ class Santa(commands.Cog, name='Secret Santa'):
             "2. To **assign** everyone their secret recipients, type:\n"
             "```{prefix}assign```\n"
             "3. To **distribute** everyone their gifts, type:\n"
-            "```{prefix}reset```\n"
+            "```{prefix}distribute```\n"
             "For more information, type `s!help`."
             .format(prefix=ctx.bot.command_prefix)
         )
