@@ -2,7 +2,7 @@
 config.py
 
 # Default SQLite database
-santabot2.db
+#santabot2.db
 
 
 ## Python stuff (https://github.com/github/gitignore/blob/master/Python.gitignore)
