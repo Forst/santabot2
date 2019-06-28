@@ -1,6 +1,6 @@
 # Santabot2 – a Secret Santa bot for Discord
 
-**[Add bot to your server](https://discordapp.com/oauth2/authorize?client_id=523455105949892609&scope=bot&permissions=11264)** (for testing only, subject to downtime)
+**[Add bot to your guild](https://discordapp.com/oauth2/authorize?client_id=523455105949892609&scope=bot&permissions=11264)** (for testing only, subject to downtime)
 
 This bot allows to conduct Secret Santa events in Discord guilds! It is specifically optimized for digital presents, such as game codes, gift cards etc., which the bot can send anonymously via direct messages.
 
@@ -27,7 +27,7 @@ The only **required** change is the Discord token (`DISCORD_TOKEN`), which you h
 
 Permission integer for API: `11264`.
 
-In this configuration file you can also change the **command prefix** (for example if it conflicts with another bot in your server, default is `s!`) or the **back-end database** (SQLite is used by default, which is only acceptable when used in a few small guilds).
+In this configuration file you can also change the **command prefix** (for example if it conflicts with another bot in your guild, default is `s!`) or the **back-end database** (SQLite is used by default, which is only acceptable when used in a few small guilds).
 
 
 ## Installation
