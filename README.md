@@ -40,7 +40,7 @@ Make sure you've **configured** your bot first! See the section above.
 **Step 1.** Run Docker Composer:
 
 ```
-$ docker-compose up
+$ docker-compose up -d
 ```
 
 That's it! It will automatically build a `santabot2:latest` image, spin up a new container and pass through the configuration file you created as a volume.
