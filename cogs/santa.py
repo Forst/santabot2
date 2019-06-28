@@ -182,7 +182,11 @@ async def send_recipient(ctx: commands.Context, wg: WishGift):
     )
 
     sender = ctx.bot.get_user(int(wg.sender_id))  # type: discord.User
-    await sender.send(message)
+
+    try:
+        await sender.send(message)
+    except (discord.HTTPException, discord.Forbidden):
+        pass
 
 
 async def send_gift(ctx: commands.Context, wg: WishGift):
@@ -196,7 +200,10 @@ async def send_gift(ctx: commands.Context, wg: WishGift):
         gift='No gift specified :(' if wg.gift == '' else wg.gift
     )
 
-    await recipient.send(message)
+    try:
+        await recipient.send(message)
+    except (discord.HTTPException, discord.Forbidden):
+        pass
 
 # endregion
 
