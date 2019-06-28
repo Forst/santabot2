@@ -1,5 +1,7 @@
 # Santabot2 – a Secret Santa bot for Discord
 
+**[Add bot to your server](https://discordapp.com/oauth2/authorize?client_id=523455105949892609&scope=bot&permissions=11264)** (for testing only, subject to downtime)
+
 This bot allows to conduct Secret Santa events in Discord guilds! It is specifically optimized for digital presents, such as game codes, gift cards etc., which the bot can send anonymously via direct messages.
 
 **Key features:**
@@ -19,9 +21,11 @@ The only **required** change is the Discord token (`DISCORD_TOKEN`), which you h
 
 **Required bot permissions:**
 
-* Read Text Channels & See Voice Channels (to receive commands)
+* Read Text Channels & See Voice Channels / View Channels (to receive commands)
 * Send Messages (to reply to commands)
 * Manage Messages (to delete `wish` and `gift` commands for secrecy reasons)
+
+Permission integer for API: `11264`.
 
 In this configuration file you can also change the **command prefix** (for example if it conflicts with another bot in your server, default is `s!`) or the **back-end database** (SQLite is used by default, which is only acceptable when used in a few small guilds).
 
@@ -118,6 +122,7 @@ For more information and extra commands refer to the `s!help` command. Note that
 * [discord.py](https://github.com/Rapptz/discord.py): an API wrapper for Discord written in Python.
 * [Pony ORM](https://ponyorm.org): a Python Object-Relational Mapper with beautiful query syntax
 * [Discord](https://discordapp.com), hosting the [Community Hack Week](https://blog.discordapp.com/discord-community-hack-week-build-and-create-alongside-us-6b2a7b7bba33) 🎉
+* Secret Santa icon for test bot based on [Futurama - Robot Santa](https://www.deviantart.com/1bigslug/art/Futurama-Robot-Santa-420086411) by [1bigslug](https://www.deviantart.com/1bigslug) (not part of this bot project, no ownership claimed, for testing purposes only)
 
 ---
 
