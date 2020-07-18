@@ -430,6 +430,21 @@ class Santa(commands.Cog, name='Secret Santa'):
 
             await ctx.send('{} Your gift has been sent to you via a private message.'.format(ctx.author.mention))
 
+    @commands.command(help='Send a person their gift')
+    @check_guild_state(GuildStates.DISTRIBUTED)
+    @commands.has_permissions(**admin_perms)
+    @commands.guild_only()
+    async def othergift(self, ctx: commands.Context, user: str):
+        with orm.db_session:
+            try:
+                wg = WishGift[str(ctx.guild.id), user]
+
+                await send_gift(ctx, wg)
+
+                await ctx.send('{} The gift has been sent.'.format(ctx.author.mention))
+            except orm.ObjectNotFound:
+                await ctx.send('{} Specified user did not take part in the event.'.format(ctx.author.mention))
+
     @commands.command(help='Display current Secret Santa status in the guild')
     @commands.guild_only()
     async def status(self, ctx: commands.Context):
