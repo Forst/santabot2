@@ -1,6 +1,6 @@
 # Santabot2 – a Secret Santa bot for Discord
 
-**[Add bot to your guild](https://discordapp.com/oauth2/authorize?client_id=523455105949892609&scope=bot&permissions=11264)** (for testing only, subject to downtime)
+**[Add bot to your guild](https://discord.com/oauth2/authorize?client_id=523455105949892609&scope=bot&permissions=11264)** (for testing only, subject to downtime)
 
 This bot allows to conduct Secret Santa events in Discord guilds! It is specifically optimized for digital presents, such as game codes, gift cards etc., which the bot can send anonymously via direct messages.
 
@@ -17,7 +17,7 @@ This bot allows to conduct Secret Santa events in Discord guilds! It is specific
 
 Copy the `config.example.py` configuration file to `config.py` in the same directory and edit the resulting file in your favourite editor.
 
-The only **required** change is the Discord token (`DISCORD_TOKEN`), which you have to obtain yourself through the [Discord Developer Portal](https://discordapp.com/developers/applications/).
+The only **required** change is the Discord token (`DISCORD_TOKEN`), which you have to obtain yourself through the [Discord Developer Portal](https://discord.com/developers/applications/).
 
 **Required bot permissions:**
 
@@ -121,7 +121,7 @@ For more information and extra commands refer to the `s!help` command. Note that
 
 * [discord.py](https://github.com/Rapptz/discord.py): an API wrapper for Discord written in Python.
 * [Pony ORM](https://ponyorm.org): a Python Object-Relational Mapper with beautiful query syntax
-* [Discord](https://discordapp.com), hosting the [Community Hack Week](https://blog.discordapp.com/discord-community-hack-week-build-and-create-alongside-us-6b2a7b7bba33) 🎉
+* [Discord](https://discord.com), hosting the [Community Hack Week](https://blog.discord.com/discord-community-hack-week-build-and-create-alongside-us-6b2a7b7bba33) 🎉
 * Secret Santa icon for test bot based on [Futurama - Robot Santa](https://www.deviantart.com/1bigslug/art/Futurama-Robot-Santa-420086411) by [1bigslug](https://www.deviantart.com/1bigslug) (not part of this bot project, no ownership claimed, for testing purposes only)
 
 ---
